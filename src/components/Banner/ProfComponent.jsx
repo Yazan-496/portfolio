@@ -17,11 +17,11 @@ const ProfComponent = () => {
           <h3>Senior Frontend developer</h3>
           <p>
             I basically work as a front-end developer, and lead a small software
-            team on some projects.
-            In addition to my main work, I was tasked with improving the performance of websites and SEO.
+            team on some projects. In addition to my main work, I was tasked
+            with improving the performance of websites and SEO.
           </p>
           <a href="#footer">
-          <button>Let's talk</button>
+            <button>Let's talk</button>
           </a>
           <Social>
             <p>Check out my</p>
@@ -47,15 +47,16 @@ const ProfComponent = () => {
       </Slide>
       <Slide direction="right">
         <Profile>
-          <img
-            src="profile.jpg"
+          {/* <img
+            src="profile-1.jpg"
             alt="profile"
             style={{
-              borderRadius: '10%',
-              width: "25rem",
-              height: "24rem"
+              objectFit: "cover",
+              borderRadius: "10%",
+              width: "10rem",
+              height: "9rem",
             }}
-          />
+          /> */}
         </Profile>
       </Slide>
     </Container>

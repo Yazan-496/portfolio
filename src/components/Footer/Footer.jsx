@@ -1,22 +1,26 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiFillGitlab,
+  AiFillLinkedin,
+  AiOutlineArrowUp,
+} from "react-icons/ai";
 import { BsFacebook, BsSlack } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 
-const Footer = () =>
-{
+const Footer = () => {
   const [emailData, setEmailData] = useState({
-    recipient: '',
-    fullName: '',
-    message: ''
+    recipient: "",
+    fullName: "",
+    message: "",
   });
 
   const handleInputChange = (e) => {
@@ -26,22 +30,24 @@ const Footer = () =>
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Your EmailJS service details
-    const serviceID = 'service_knxh8ln';
-    const templateID = 'template_1vorssz';
+    const serviceID = "service_knxh8ln";
+    const templateID = "template_1vorssz";
     const userID = "RfogebdZ5GDI5lNJX";
     // Prepare the email template parameters
     const templateParams = {
-      to_name: 'Yazan Adanouf',
+      to_name: "Yazan Adanouf",
       from_name: emailData.fullName,
       message: emailData.message,
     };
     // Send the email using EmailJS SDK
-    emailjs.send(serviceID, templateID, templateParams, userID)
-        .then((response) => {
-          console.log('Email sent successfully!', response.status, response.text);
-        }, (error) => {
-          console.error('Failed to send email:', error);
-        });
+    emailjs.send(serviceID, templateID, templateParams, userID).then(
+      (response) => {
+        console.log("Email sent successfully!", response.status, response.text);
+      },
+      (error) => {
+        console.error("Failed to send email:", error);
+      }
+    );
 
     // Reset the form fields if needed
     e.target.reset();
@@ -68,10 +74,10 @@ const Footer = () =>
           </Slide>
         </div>
         <div className="links">
-          <Slide style={{padding: "10px"}} direction="left">
+          <Slide style={{ padding: "10px" }} direction="left">
             <h1>Contact me directly:</h1>
           </Slide>
-          <div  style={{padding: "10px"}}>
+          <div style={{ padding: "10px" }}>
             <span>
               <FiPhoneCall />
             </span>
@@ -79,24 +85,31 @@ const Footer = () =>
               <a href="tel:+963980033496">+963 980 033 496</a>
             </Slide>
           </div>
-          <div  style={{padding: "10px"}} >
+          <div style={{ padding: "10px" }}>
             <Slide direction="left">
               <span>
                 <HiOutlineMailOpen />
               </span>
             </Slide>
             <Slide>
-              <a href="mailto:yazan.adanouf.m@gmail.com">yazan.adanouf.m@gmail.com</a>
+              <a href="mailto:yazan.adanouf.m@gmail.com">
+                yazan.adanouf.m@gmail.com
+              </a>
             </Slide>
           </div>
-          <div  style={{padding: "10px"}} >
+          <div style={{ padding: "10px" }}>
             <Slide direction="left">
               <span>
                 <IoLogoWhatsapp />
               </span>
             </Slide>
             <Slide>
-              <a target="_blank" href="https://api.whatsapp.com/send?phone=00963980033496">whatsapp: +963 980 033 496</a>
+              <a
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=00963980033496"
+              >
+                whatsapp: +963 980 033 496
+              </a>
             </Slide>
           </div>
         </div>
@@ -107,29 +120,29 @@ const Footer = () =>
           <div className="icons">
             <Zoom>
               <span>
-                <a href="/">
+                <a href="https://github.com/Yazan-496">
                   <AiFillGithub />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="/">
+                <a href="https://gitlab.com/YazanAd">
+                  <AiFillGitlab />
+                </a>
+              </span>
+            </Zoom>
+            <Zoom>
+              <span>
+                <a href="https://www.linkedin.com/in/yazan-adanouf-44888b270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                   <AiFillLinkedin />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="/">
+                <a href="https://www.facebook.com/profile.php?id=100008858923633">
                   <BsFacebook />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  <BsSlack />
                 </a>
               </span>
             </Zoom>
@@ -148,19 +161,38 @@ const Footer = () =>
               <span>
                 <CgProfile />
               </span>
-              <input type="text" value={emailData.fullName} name="fullName"  placeholder="Fullname..." onChange={handleInputChange}/>
+              <input
+                type="text"
+                value={emailData.fullName}
+                name="fullName"
+                placeholder="Fullname..."
+                onChange={handleInputChange}
+              />
             </div>
             <div className="email">
               <span>
                 <MdAlternateEmail />
               </span>
-              <input type="email" name="recipient" value={emailData.recipient} placeholder="Email..." onChange={handleInputChange}/>
+              <input
+                type="email"
+                name="recipient"
+                value={emailData.recipient}
+                placeholder="Email..."
+                onChange={handleInputChange}
+              />
             </div>
             <div className="message">
               <span className="messageIcon">
                 <FiMail />
               </span>
-              <textarea cols="30" name="message" rows="10" value={emailData.message} placeholder="Message..." onChange={handleInputChange}></textarea>
+              <textarea
+                cols="30"
+                name="message"
+                rows="10"
+                value={emailData.message}
+                placeholder="Message..."
+                onChange={handleInputChange}
+              ></textarea>
             </div>
             <button>Submit</button>
           </form>
