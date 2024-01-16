@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { GiEarthAmerica } from "react-icons/gi";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaGitlab, FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
+import { BsFacebook, BsLinkedin } from "react-icons/bs";
 
 const ProfComponent = () => {
   return (
@@ -27,17 +28,22 @@ const ProfComponent = () => {
             <p>Check out my</p>
             <div className="social-icons">
               <span>
-                <a href="/">
-                  <AiOutlineInstagram />
+                <a href="https://github.com/Yazan-496">
+                  <FaGithub />
                 </a>
               </span>
               <span>
-                <a href="/">
-                  <GiEarthAmerica />
+                <a href="https://gitlab.com/YazanAd">
+                  <FaGitlab />
                 </a>
               </span>
               <span>
-                <a href="/">
+                <a href="https://www.facebook.com/profile.php?id=100008858923633">
+                  <FaFacebook />
+                </a>
+              </span>
+              <span>
+                <a href="https://www.linkedin.com/in/yazan-adanouf-44888b270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                   <FaLinkedinIn />
                 </a>
               </span>
