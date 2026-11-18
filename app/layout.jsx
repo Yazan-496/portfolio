@@ -20,9 +20,9 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata = {
-  title: "Yazan Adanouf — Senior Frontend Developer",
+  title: "Yazan Adanof — Full-Stack Developer",
   description:
-    "Fintech frontend developer and technical lead. Banking platforms, real-time dashboards, and serverless KYC pipelines.",
+    "Full-stack developer and technical lead in fintech. Banking platforms, real-time dashboards, Node.js APIs and serverless KYC services.",
 };
 
 export default function RootLayout({ children }) {

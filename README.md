@@ -1,4 +1,4 @@
-# Yazan Adanouf — Portfolio
+# Yazan Adanof — Portfolio
 
 Next.js (App Router) + Tailwind CSS v4.
 
@@ -23,7 +23,7 @@ npm run dev
 
 **قبل النشر:**
 1. بـ `data/content.js` بدّل `USERNAME` بروابط GitHub وLinkedIn الحقيقية
-2. حط ملف `Yazan_Adanouf_CV.pdf` بمجلد `public/`
+2. حط ملف `Yazan_Adanof_CV.pdf` بمجلد `public/`
 
 ## النشر على Cloudflare Workers
 
