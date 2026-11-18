@@ -1,8 +1,5 @@
 // ─────────────────────────────────────────────
 // كل نصوص الموقع هون — عدّل بحرية بدون ما تلمس الكومبوننتس
-//
-// الصور: حطها بـ public/work/<slug>/… بنفس الأسماء المكتوبة تحت.
-// أي صورة مش موجودة بتظهر كـ "screenshot pending" بدل ما تكسر الصفحة.
 // ─────────────────────────────────────────────
 
 export const SITE = {
@@ -42,7 +39,6 @@ export const CASE_STUDIES = [
     year: "2024 — present",
     surfaces: "Customer web app · Management dashboard · Business dashboard",
     stack: ["Next.js", "Cloudflare Workers", "AWS Rekognition", "NestJS integration"],
-    cover: "/work/digital-banking-platform/cover.png",
     problem:
       "A digital bank serving Syria, Lebanon, Iraq, Turkey and Jordan — each with its local currency plus USD, gold and silver accounts. Onboarding had to verify identity documents from five countries with zero manual review.",
     solution:
@@ -67,34 +63,6 @@ export const CASE_STUDIES = [
         body: "The customer app, the management dashboard and the business dashboard share a single component layer. Density and tone change between them; the primitives don't.",
       },
     ],
-    gallery: [
-      {
-        src: "/work/digital-banking-platform/01-onboarding-flow.png",
-        caption: "Onboarding — the full identity verification flow, screen by screen.",
-        frame: "phone",
-      },
-      {
-        src: "/work/digital-banking-platform/02-accounts-home.png",
-        caption: "Accounts home — local currency, USD, gold and silver in one prioritised list.",
-        frame: "phone",
-      },
-      {
-        src: "/work/digital-banking-platform/03-management-dashboard.png",
-        caption: "Management dashboard — operations view.",
-        frame: "browser",
-        wide: true,
-      },
-      {
-        src: "/work/digital-banking-platform/04-send-receive.png",
-        caption: "Send, receive, payment requests and QR scanning.",
-        frame: "phone",
-      },
-      {
-        src: "/work/digital-banking-platform/05-kyc-architecture.png",
-        caption: "KYC pipeline — the serverless service I designed and built on Cloudflare Workers.",
-        frame: "flat",
-      },
-    ],
     links: [],
   },
   {
@@ -105,7 +73,6 @@ export const CASE_STUDIES = [
     year: "2024 — present",
     surfaces: "Agent workspace · Admin tooling",
     stack: ["React", "Redux-Saga", "Pusher", "Meta WhatsApp Business API"],
-    cover: "/work/operations-dashboard/cover.png",
     problem:
       "50+ employees handling hundreds of daily customer tickets for crypto deposits and top-ups — all arriving over WhatsApp, where a banned number means the business goes silent.",
     solution:
@@ -126,24 +93,6 @@ export const CASE_STUDIES = [
         body: "The official WhatsApp Business API only permits approved templates outside the customer service window. Rather than let agents discover that through failed sends, the composer surfaces the constraint directly and offers the right template for the ticket's state.",
       },
     ],
-    gallery: [
-      {
-        src: "/work/operations-dashboard/01-agent-workspace.png",
-        caption: "Agent workspace — ticket queue and live conversation side by side.",
-        frame: "browser",
-        wide: true,
-      },
-      {
-        src: "/work/operations-dashboard/02-ticket-detail.png",
-        caption: "Ticket detail — customer history and deposit state in context.",
-        frame: "browser",
-      },
-      {
-        src: "/work/operations-dashboard/03-template-composer.png",
-        caption: "Template composer — Meta's messaging rules surfaced before the send, not after.",
-        frame: "browser",
-      },
-    ],
     links: [],
   },
   {
@@ -154,7 +103,6 @@ export const CASE_STUDIES = [
     year: "2023",
     surfaces: "Marketing site",
     stack: ["Design", "Frontend", "Deployment"],
-    cover: "/work/bag-printing-website/cover.png",
     problem:
       "A Riyadh print shop needed an online presence — with no in-house tech team and a client nine hundred kilometres away.",
     solution:
@@ -168,24 +116,6 @@ export const CASE_STUDIES = [
       {
         title: "Designed against the client's vocabulary",
         body: "With no shared timezone and no design team on the other side, I worked from the client's own words and sample products, and reviewed in short async rounds instead of long meetings.",
-      },
-    ],
-    gallery: [
-      {
-        src: "/work/bag-printing-website/01-homepage.png",
-        caption: "Homepage.",
-        frame: "browser",
-        wide: true,
-      },
-      {
-        src: "/work/bag-printing-website/02-products.png",
-        caption: "Product presentation.",
-        frame: "browser",
-      },
-      {
-        src: "/work/bag-printing-website/03-mobile.png",
-        caption: "Mobile layout.",
-        frame: "phone",
       },
     ],
     links: [

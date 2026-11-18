@@ -98,8 +98,8 @@ export default function Home() {
         <p className="mt-3 max-w-2xl leading-relaxed text-slate-400">
           Three products I built and shipped — a multi-country bank, an
           operations workspace used daily by 50+ employees, and a business site
-          delivered solo. Open any one for the screens and the decisions behind
-          them.
+          delivered solo. The systems are private, so there are no screens here —
+          open any one for the problem, what I built and the decisions behind it.
         </p>
         <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {CASE_STUDIES.map((cs) => (

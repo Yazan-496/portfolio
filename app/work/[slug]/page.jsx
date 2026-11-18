@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import Gallery from "@/components/Gallery";
 import { CASE_STUDIES, SITE } from "@/data/content";
 
 const focusRing =
@@ -98,21 +97,6 @@ export default async function CaseStudyPage({ params }) {
             Outcome
           </p>
           <p className="mt-1.5 leading-relaxed text-amber-100/90">{cs.outcome}</p>
-        </div>
-      </section>
-
-      {/* ── Screens ── */}
-      <section className="border-y border-slate-800 bg-slate-900/30">
-        <div className="mx-auto max-w-5xl px-5 py-14">
-          <h2 className="font-display text-2xl font-semibold text-slate-100">
-            Screens
-          </h2>
-          <p className="mt-2 text-sm text-slate-500">
-            Click any screen to enlarge.
-          </p>
-          <div className="mt-8">
-            <Gallery shots={cs.gallery} />
-          </div>
         </div>
       </section>
 

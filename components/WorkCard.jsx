@@ -1,11 +1,8 @@
 import Link from "next/link";
-import Shot from "./Shot";
 
 export default function WorkCard({ cs }) {
   return (
     <article className="group relative flex flex-col overflow-hidden rounded-lg border border-slate-800 bg-slate-900/40 transition hover:border-slate-700">
-      <Shot shot={{ src: cs.cover, frame: "flat" }} />
-
       <div className="flex flex-1 flex-col p-5">
         <p className="font-mono text-xs uppercase tracking-widest text-amber-400/90">
           {cs.tag}
