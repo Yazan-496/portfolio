@@ -13,7 +13,7 @@ export const SITE = {
   email: "yazan.adanof@gmail.com",
   whatsapp: "+963980033496", // ← خليه فاضي وما رح يظهر
   github: "https://github.com/Yazan-496", // ← خليه فاضي وما رح يظهر
-  linkedin: "https://www.linkedin.com/in/yazan-adanouf", // ← خليه فاضي وما رح يظهر
+  linkedin: "https://www.linkedin.com/in/yazan-adanof", // ← خليه فاضي وما رح يظهر
   cvUrl: "/Yazan_Adanof_CV.pdf",
 };
 
